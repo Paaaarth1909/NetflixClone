@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" />
+    <input type="text" id="search-bar" placeholder="Search..." />
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1 class="banner-title">Featured Movie</h1>
+      <p class="banner-description">This is a Netflix clone demo banner section.</p>
+      <div class="banner-buttons">
+        <button>Play</button>
+        <button>My List</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Movie Rows -->
+  <section class="row" id="trending">
+    <h2>Trending Now</h2>
+    <div class="row-posters"></div>
+  </section>
+
+  <section class="row" id="top-rated">
+    <h2>Top Rated</h2>
+    <div class="row-posters"></div>
+  </section>
+
+  <section class="row" id="action-movies">
+    <h2>Action Movies</h2>
+    <div class="row-posters"></div>
+  </section>
+
+  <!-- Movie Modal -->
+  <div class="modal" id="movie-modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <img id="modal-img" />
+      <p id="modal-desc">Movie description here...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
